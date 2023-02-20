@@ -1,0 +1,12 @@
+[
+    {
+      "dn": "cn=user,dc=test",
+      "attributes": {
+        "objectClass": "person",
+        "cn": "user-login",
+        "attribute1": "value1",
+        "attribute2": "value2"
+      }
+    }
+    
+  ]

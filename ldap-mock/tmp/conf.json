@@ -1,0 +1,6 @@
+{
+    "certPath": "/path/to/certificate/public/key.pem",
+    "certKeyPath": "/path/to/certificate/private/key.pem",
+    "port": 3004,
+    "searchBase": "dc=test"
+  }
