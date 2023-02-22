@@ -15,7 +15,7 @@ import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 // end of imports
 
-const LoginPart = () => {
+const LoginPart = (props) => {
 
   function Copyright(props) {
     return (
@@ -32,6 +32,9 @@ const LoginPart = () => {
   
 // push to ldap
     const handleSubmit = (event) => {
+      //fake auth
+        props.setLoggedin(true);
+        
         event.preventDefault();
         const data = new FormData(event.currentTarget);
         console.log({
