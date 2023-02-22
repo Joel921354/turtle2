@@ -15,6 +15,7 @@ import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
+
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
@@ -28,7 +29,7 @@ const ExpandMore = styled((props) => {
 
 const CARD_BODY = 'body';
 
-export default function DataLead() {
+export default function DataLead(props) {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
@@ -48,8 +49,8 @@ export default function DataLead() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title={props.dataLeadTitle}
+        subheader={new Date(Date.now()).toISOString()}
       />
      
       <CardContent>

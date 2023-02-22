@@ -10,12 +10,13 @@ import BottomActions from './BottomActions';
 
 export const BodyContent = () => {
 
-    const [context, setContext] = useState(0) 
+    const [context, setContext] = useState('ALLOCATE');
+
     return( <>
-        <DataTab></DataTab>
+        <DataTab setContext={setContext}></DataTab>
         <Grid container spacing={2}>
-            <Grid item><DataLead/> </Grid>
-            <Grid width='80%'item><ZebraTable/> <BottomActions/></Grid>
+            <Grid item><DataLead dataLeadTitle={context}/> </Grid>
+            <Grid width='80%'item><ZebraTable/> <PageActions></PageActions></Grid>
 
            
         </Grid>

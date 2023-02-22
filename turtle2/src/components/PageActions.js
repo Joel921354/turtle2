@@ -18,17 +18,19 @@ const actions = [
 
 export default function PageActions() {
   return (
-    <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
+    <Box sx={{ height: 150, transform: 'translateZ(0px)', flexGrow: 1 }}>
       <SpeedDial
         ariaLabel="SpeedDial openIcon example"
         sx={{ position: 'absolute', bottom: 16, right: 16 }}
-        icon={<SpeedDialIcon openIcon={<EditIcon />} />}
+        icon={<SpeedDialIcon openIcon={<EditIcon />}
+        />}
       >
         {actions.map((action) => (
           <SpeedDialAction
             key={action.name}
             icon={action.icon}
             tooltipTitle={action.name}
+            
           />
         ))}
       </SpeedDial>
