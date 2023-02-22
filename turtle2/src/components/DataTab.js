@@ -17,6 +17,7 @@ export default function DataTab() {
         <Tab label="ZEBRA" />
         <Tab label="WEDGE" />
         <Tab label="FROG" />
+        <Tab label="TRUTH" />
       </Tabs>
     </Box>
   );

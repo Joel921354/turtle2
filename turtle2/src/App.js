@@ -3,7 +3,6 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Topbar from './components/Topbar';
 import LoginPart from './components/LoginPart';
-import ZebraTable from './components/tables/Zebra';
 import { Grid } from '@mui/material';
 import DataTab from './components/DataTab';
 import BodyContent from './components/BodyContent';
@@ -14,6 +13,7 @@ import BodyContent from './components/BodyContent';
 
 /*
 - time stamp converter tool
+- tru
 */
 const darkTheme = createTheme({
   palette: {

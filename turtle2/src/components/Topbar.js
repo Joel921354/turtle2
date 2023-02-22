@@ -10,7 +10,7 @@ return(
       <AppBar position="static">
         <Toolbar>
         
-          <Avatar size='sm'src='../img/turtle_1f422.gif'/>
+          <Avatar src='./img/turtle_1f422.gif'/>
           
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             &nbsp;Data Management Platform

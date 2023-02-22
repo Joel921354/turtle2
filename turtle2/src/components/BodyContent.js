@@ -1,11 +1,12 @@
 import {React,  useState } from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import ZebraTable from '../components/tables/Zebra';
-import { Grid } from '@mui/material';
+import ZebraTable from '../components/tables/ZebraTable';
+import { BottomNavigation, Grid } from '@mui/material';
 import DataTab from '../components/DataTab';
-import PageActions from '../components/PageActions';
+import PageActions from './PageActions';
 import DataLead from './DataLead';
 import { Stack } from '@mui/system';
+import BottomActions from './BottomActions';
 
 export const BodyContent = () => {
 
@@ -14,9 +15,11 @@ export const BodyContent = () => {
         <DataTab></DataTab>
         <Grid container spacing={2}>
             <Grid item><DataLead/> </Grid>
+            <Grid width='80%'item><ZebraTable/> <BottomActions/></Grid>
+
            
-        </Grid> <ZebraTable/> 
-        <PageActions></PageActions>
+        </Grid>
+       
         </>
     )
 
