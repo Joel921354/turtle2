@@ -1,0 +1,15 @@
+{
+    "TABLES":[{
+                "0":"ALLOCATE",
+                "1":"ZEBRA",
+                "2":"WEDGE",
+                "3":"FROG",
+                "4":"TRUTH"
+    }],
+    "TABLE_INFO":[{
+            "0":"in computer file systems, a block allocation map is a data structure used to track disk blocks that are considered in use. Blocks may also be referred to as allocation units or clusters",
+            "1":"Zebras (US: /ˈziːbrəz/, UK: /ˈzɛbrəz, ˈziː-/)[1] (subgenus Hippotigris) are African equines with distinctive black-and-white striped coats.",
+            "2":"A wedge is a triangular shaped tool, and is a portable inclined plane, and one of the six simple machines. It can be used to separate two objects or portions of an object, lift up an object, or hold an object in place",
+            "3":"A frog is any member of a diverse and largely carnivorous group of short-bodied, tailless amphibians composing the order Anura[1] (ανοὐρά, literally without tail in Ancient Greek).",
+            "4":"Truth is the property of being in accord with fact or reality.[1] In everyday language, truth is typically ascribed to things that aim to represent reality or otherwise correspond to it, such as beliefs, propositions, and declarative sentences.[2]"}]
+}

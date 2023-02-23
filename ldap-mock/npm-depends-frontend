@@ -1,0 +1,3 @@
+ldap-mock@ /home/eggman/Documents/repos/turtle2/ldap-mock
+└── UNMET DEPENDENCY ldap-server-mock@^6.0.1
+

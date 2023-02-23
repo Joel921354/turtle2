@@ -14,6 +14,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import STRINGS from '../STRINGS.json'
 
 
 const ExpandMore = styled((props) => {
@@ -27,11 +28,15 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-const CARD_BODY = 'body';
 
 export default function DataLead(props) {
+//strings
+console.log(props.context)
+var CARD_BODY = JSON.stringify(STRINGS.TABLE_INFO[0][props.context]);
+var CARD_HEADER = STRINGS.TABLES[0][props.context];
+// hooks
   const [expanded, setExpanded] = React.useState(false);
-
+//functions
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
@@ -49,7 +54,7 @@ export default function DataLead(props) {
             <MoreVertIcon />
           </IconButton>
         }
-        title={props.dataLeadTitle}
+        title={'Table Name: '+ CARD_HEADER}
         subheader={new Date(Date.now()).toISOString()}
       />
      
