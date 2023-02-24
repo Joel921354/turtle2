@@ -8,6 +8,9 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
+import STRINGS from '../STRINGS.json'
+
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -51,7 +54,13 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
+// strings
+const TOPBAR_TITLE = STRINGS.TOPBAR[0].TITLE;
+
+// app start
 export default function SearchAppBar() {
+
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -71,7 +80,7 @@ export default function SearchAppBar() {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+          {TOPBAR_TITLE}
           </Typography>
           <Search>
             <SearchIconWrapper>
