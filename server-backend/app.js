@@ -4,11 +4,13 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
+var platformRouter = require('./routes/platformsRouter');
 var usersRouter = require('./routes/users');
+const knex = require('./db')
 
 var app = express();
 
+const port = 5001;
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -19,7 +21,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
+app.use('/', platformRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
@@ -39,3 +41,9 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+knex.select('*')
+.from('public.wedge')
+.then(userData =>{console.log(userData)})
+
+app.listen(port,() => {console.log(`app listening on port ${port}`)})
